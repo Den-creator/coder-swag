@@ -18,6 +18,7 @@
 		007A65DA23D89FF700296DF6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A65D923D89FF700296DF6 /* DataService.swift */; };
 		007A65DC23D8BE2700296DF6 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A65DB23D8BE2700296DF6 /* ProductCell.swift */; };
 		007A65DE23D8C03800296DF6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A65DD23D8C03800296DF6 /* Product.swift */; };
+		007A65E023D8C71200296DF6 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A65DF23D8C71200296DF6 /* ProductVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		007A65D923D89FF700296DF6 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		007A65DB23D8BE2700296DF6 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		007A65DD23D8C03800296DF6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		007A65DF23D8C71200296DF6 /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				007A65C123D88DAB00296DF6 /* CategoriesVC.swift */,
+				007A65DF23D8C71200296DF6 /* ProductVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				007A65BE23D88DAB00296DF6 /* AppDelegate.swift in Sources */,
 				007A65DA23D89FF700296DF6 /* DataService.swift in Sources */,
 				007A65C023D88DAB00296DF6 /* SceneDelegate.swift in Sources */,
+				007A65E023D8C71200296DF6 /* ProductVC.swift in Sources */,
 				007A65DC23D8BE2700296DF6 /* ProductCell.swift in Sources */,
 				007A65D523D8928400296DF6 /* CategoryCell.swift in Sources */,
 			);
