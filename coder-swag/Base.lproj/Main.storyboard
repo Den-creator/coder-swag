@@ -10,22 +10,25 @@
         <!--CODERSWAG-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CategoryVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc7-4K-Xr0">
-                                <rect key="frame" x="20" y="30" width="165" height="23.5"/>
+                                <rect key="frame" x="20" y="30" width="165" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="PAz-l1-qL5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Huu-LO-YdO">
-                                <rect key="frame" x="0.0" y="73.5" width="414" height="700.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Huu-LO-YdO">
+                                <rect key="frame" x="0.0" y="74" width="414" height="700"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="184" id="HWf-qe-DMZ" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="184" id="HWf-qe-DMZ" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="184"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HWf-qe-DMZ" id="lln-3s-UL8">
@@ -33,7 +36,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="NuJ-C4-Csc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="178"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="180" id="tyl-WG-Acj"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWY-El-K8D">
                                                     <rect key="frame" x="107" y="57" width="200" height="70"/>
@@ -47,9 +53,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="NuJ-C4-Csc" firstAttribute="top" secondItem="lln-3s-UL8" secondAttribute="top" id="5eO-99-ZKF"/>
+                                                <constraint firstItem="NuJ-C4-Csc" firstAttribute="top" secondItem="lln-3s-UL8" secondAttribute="top" constant="3" id="5eO-99-ZKF"/>
                                                 <constraint firstItem="NuJ-C4-Csc" firstAttribute="leading" secondItem="lln-3s-UL8" secondAttribute="leading" id="DNv-cL-3Oz"/>
-                                                <constraint firstAttribute="bottom" secondItem="NuJ-C4-Csc" secondAttribute="bottom" id="JFa-vh-mIB"/>
+                                                <constraint firstAttribute="bottom" secondItem="NuJ-C4-Csc" secondAttribute="bottom" constant="3" id="JFa-vh-mIB"/>
                                                 <constraint firstItem="GWY-El-K8D" firstAttribute="centerY" secondItem="lln-3s-UL8" secondAttribute="centerY" id="V2z-5E-EsU"/>
                                                 <constraint firstItem="GWY-El-K8D" firstAttribute="centerX" secondItem="lln-3s-UL8" secondAttribute="centerX" id="YlJ-ou-sOb"/>
                                                 <constraint firstAttribute="trailing" secondItem="NuJ-C4-Csc" secondAttribute="trailing" id="qzb-yO-4xg"/>
