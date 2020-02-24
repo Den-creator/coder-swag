@@ -16,7 +16,8 @@ class DataService {
         Category(title: "SHIRTS", imageName: "shirts.png"),
         Category(title: "HOODIES", imageName: "hoodies.png"),
         Category(title: "HATS", imageName: "hats.png"),
-        Category(title: "DIGITAL", imageName: "digital.png")
+        Category(title: "DIGITAL", imageName: "digital.png"),
+        Category(title: "ITALY", imageName: "italy.jpg")
     ]
     
     private let hats = [
@@ -43,7 +44,10 @@ class DataService {
         Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png")
     ]
     
+    
+    
     private let digitalGoods = [Product]()
+    
     
     func getCategories() -> [Category] {
         return categories
@@ -79,6 +83,35 @@ class DataService {
     
     func getGigitalGoods() -> [Product] {
         return digitalGoods
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    private let italy = [
+        Cities(city: "Rome", imageName: "Rim.png"),
+        Cities(city: "Florence", imageName: "Florencia.jpg")
+    ]
+    
+       
+    
+    func getCountry(forCategoryTitle country: String) -> [Cities] {
+        switch country {
+        case "ITALY":
+            return getItaly()
+        default:
+            return getItaly()
+        }
+    }
+    
+    
+    func getItaly() -> [Cities] {
+        return italy
     }
     
     
